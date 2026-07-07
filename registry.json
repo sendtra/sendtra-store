@@ -7,10 +7,10 @@
       "name": "Clock",
       "author": "sendtra",
       "version": "1.0",
-      "description": "A simple test entry. No real files yet.",
-      "icon": "",
+      "description": "First real icon download test.",
+      "icon": "https://github.com/sendtra/sendtra-store/releases/download/v0.1-demo/demo_clock_icon.bin",
       "app": "",
-      "sha256_icon": "",
+      "sha256_icon": "132946e65688baf50a288b961075d81391578384f3a05f5616926a4567fed612",
       "sha256_app": ""
     },
     {
