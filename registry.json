@@ -1,0 +1,28 @@
+{
+  "registry_version": 1,
+  "name": "Sendtra App Store",
+  "apps": [
+    {
+      "id": "demo_clock",
+      "name": "Clock",
+      "author": "sendtra",
+      "version": "1.0",
+      "description": "A simple test entry. No real files yet.",
+      "icon": "",
+      "app": "",
+      "sha256_icon": "",
+      "sha256_app": ""
+    },
+    {
+      "id": "demo_dice",
+      "name": "Dice Roller",
+      "author": "sendtra",
+      "version": "0.1",
+      "description": "Second fake app so the list has two items.",
+      "icon": "",
+      "app": "",
+      "sha256_icon": "",
+      "sha256_app": ""
+    }
+  ]
+}
