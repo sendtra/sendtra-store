@@ -11,7 +11,7 @@
       "icon": "https://github.com/sendtra/sendtra-store/releases/download/v0.1-demo/demo_clock_icon.bin",
       "app": "https://github.com/sendtra/sendtra-store/releases/download/v0.1-demo/clock.lua",
       "sha256_icon": "132946e65688baf50a288b961075d81391578384f3a05f5616926a4567fed612",
-      "sha256_app": "42fb48a2ebe729fa21ca214f9246677faecd8b4d7afd0540a5ae9ebaae40a015"
+      "sha256_app": "8701668c1ca69156573f75910c69a5fb886dc1e8d95f72d78a551f75531770dd"
     },
     {
       "id": "demo_dice",
