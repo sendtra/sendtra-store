@@ -14,15 +14,15 @@
       "sha256_app": "8701668c1ca69156573f75910c69a5fb886dc1e8d95f72d78a551f75531770dd"
     },
     {
-      "id": "demo_dice",
-      "name": "Dice Roller",
+      "id": "stocks",
+      "name": "Stocks",
       "author": "sendtra",
-      "version": "0.1",
-      "description": "Second fake app so the list has two items.",
-      "icon": "",
-      "app": "",
-      "sha256_icon": "",
-      "sha256_app": ""
+      "version": "1.0",
+      "description": "Live watchlist with real prices and logos.",
+      "icon": "https://github.com/sendtra/sendtra-store/releases/download/v0.1-demo/stocks_icon.bin",
+      "app": "https://github.com/sendtra/sendtra-store/releases/download/v0.1-demo/stocks.lua",
+      "sha256_icon": "3be9cfa8918f35398f33e0f5ea37613bcc8a8ddc3dc765286e1886de178a478d",
+      "sha256_app": "fdca861d8a71e2503fadd063877e2659bf7620121c2ec1212e1cbe2e82aa138d"
     }
   ]
 }
