@@ -6,6 +6,13 @@
       "version": 1,
       "icon_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/0bc686109093/icon.bin",
       "script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/0bc686109093/draw.lua"
+    },
+    {
+      "id": "be846147f797",
+      "name": "333",
+      "version": 1,
+      "icon_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/be846147f797/icon.bin",
+      "script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/be846147f797/draw.lua"
     }
   ]
 }
