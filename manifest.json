@@ -1,0 +1,11 @@
+{
+  "widgets": [
+    {
+      "id": "0bc686109093",
+      "name": "Test",
+      "version": 1,
+      "icon_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/0bc686109093/icon.bin",
+      "script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/0bc686109093/draw.lua"
+    }
+  ]
+}
