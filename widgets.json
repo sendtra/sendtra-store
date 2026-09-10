@@ -103,6 +103,19 @@
       "medium_script_sha256": "a3fef16ba6d3e943cbd190464df4451b59d954b2ce0834cac166536326325ced",
       "large_script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/93e34da91f0a/draw_large.lua",
       "large_script_sha256": "8438c607913089f42aec21069a43765a8f1d77bb965898b00a9b5d7f334703ee"
+    },
+    {
+      "id": "d7704cc31cc7",
+      "name": "Grid",
+      "version": 1,
+      "icon_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/d7704cc31cc7/icon.bin",
+      "script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/d7704cc31cc7/draw.lua",
+      "icon_sha256": "c88d97efd5098b9471483d756f6fdb0bafce4499c58ad5fd4f6ae9781a57354f",
+      "script_sha256": "a71086b506cfdb0c4165d898b8f5f12a1307fa9f16aec2b1b2b54c973f5cf00b",
+      "medium_script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/d7704cc31cc7/draw_medium.lua",
+      "medium_script_sha256": "959c995a7a4d1b32df5243e287837fc95d54251e4221427f7ed04ac42d47d6f9",
+      "large_script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/d7704cc31cc7/draw_large.lua",
+      "large_script_sha256": "959c995a7a4d1b32df5243e287837fc95d54251e4221427f7ed04ac42d47d6f9"
     }
   ]
 }
