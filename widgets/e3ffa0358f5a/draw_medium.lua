@@ -3,4 +3,25 @@
 -- Widget: Clock
 
 function draw(ox, oy, w, h)
+  do
+    local dx, dy = 0.0000, 1.0000
+    local halfW, halfH = w / 2, h / 2
+    local projMax = math.abs(halfW * dx) + math.abs(halfH * dy)
+    if projMax < 0.001 then projMax = 1 end
+    for by = 0, h - 1, 6 do
+      local bh = math.min(6, h - by)
+      for bx = 0, w - 1, 6 do
+        local bw = math.min(6, w - bx)
+        local proj = (bx + bw / 2 - halfW) * dx + (by + bh / 2 - halfH) * dy
+        local t = 0.5 + proj / (2 * projMax)
+        if t < 0 then t = 0 elseif t > 1 then t = 1 end
+        fill_rect(ox + bx, oy + by, bw, bh, blend_color(0xEF5D, 0xFFFF, t))
+      end
+    end
+  end
+  draw_text(ox + 20, oy + 17, "Text", 0x0000)
+  draw_ring(ox + 166, oy + 30, 20, 15, 0.65, 0x0000, 0xC618, 0xEF5D)
+  draw_ring(ox + 167, oy + 79, 20, 15, 0.65, 0x0000, 0xC618, 0xEF5D)
+  draw_ring(ox + 168, oy + 124, 20, 15, 0.65, 0x0000, 0xC618, 0xEF5D)
+  draw_text(ox + 20, oy + 59, "Text", 0x0000)
 end
