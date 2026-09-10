@@ -1,19 +1,6 @@
 {
   "widgets": [
     {
-      "id": "824d0dfe9da4",
-      "name": "Test1",
-      "version": 1,
-      "icon_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/824d0dfe9da4/icon.bin",
-      "script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/824d0dfe9da4/draw.lua",
-      "icon_sha256": "c45bb2539f7566ae2445475aa2dfa151a5a728725a93027966af5b22ac138266",
-      "script_sha256": "b09cadbe2053b0662d432845452faac19c7db1a5f22d8b4a04aeaa186c1a2c11",
-      "medium_script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/824d0dfe9da4/draw_medium.lua",
-      "medium_script_sha256": "bc9160f10de586cccb76ef3a194aee6f3892a0b038a9511f708301225beb3482",
-      "large_script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/824d0dfe9da4/draw_large.lua",
-      "large_script_sha256": "bc9160f10de586cccb76ef3a194aee6f3892a0b038a9511f708301225beb3482"
-    },
-    {
       "id": "d7704cc31cc7",
       "name": "Grid",
       "version": 1,
