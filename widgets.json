@@ -27,19 +27,6 @@
       "large_script_sha256": "8a5a078c6d21036f06f22e544ef5267f2e0068601da1da86985abf3fa43cdf35"
     },
     {
-      "id": "b69e37ebcbd7",
-      "name": "Texas",
-      "version": 1,
-      "icon_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/b69e37ebcbd7/icon.bin",
-      "script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/b69e37ebcbd7/draw.lua",
-      "icon_sha256": "cf87878cd04c7629ffc96b16f3d76951921a4c6161d7702fd51c3c863b34bb23",
-      "script_sha256": "2777df774d28aed0d374ad82982f8192c0fda8d383ba9e1218410e4a61f3d20d",
-      "medium_script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/b69e37ebcbd7/draw_medium.lua",
-      "medium_script_sha256": "aae266b42abd2bf8a31b9feba6853419764734fbee7193f74ae2b02c757c13bb",
-      "large_script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/b69e37ebcbd7/draw_large.lua",
-      "large_script_sha256": "aae266b42abd2bf8a31b9feba6853419764734fbee7193f74ae2b02c757c13bb"
-    },
-    {
       "id": "fcd7c53ae77f",
       "name": "Color",
       "version": 2,
