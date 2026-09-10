@@ -1,13 +1,3 @@
 {
-  "widgets": [
-    {
-      "id": "be846147f797",
-      "name": "333",
-      "version": 2,
-      "icon_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/be846147f797/icon.bin",
-      "script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/be846147f797/draw.lua",
-      "icon_sha256": "c9ee995676194e78d69e42fa28473934b2003cb76d25d065c12763b3a5f656c2",
-      "script_sha256": "69c1016e25c4a9c828864e4def492166d7e4fb3c47212288da596f013418d2a6"
-    }
-  ]
+  "widgets": []
 }
