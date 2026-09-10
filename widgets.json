@@ -55,7 +55,7 @@
     {
       "id": "9fccb19ab18a",
       "name": "test2",
-      "version": 1,
+      "version": 2,
       "icon_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/9fccb19ab18a/icon.bin",
       "script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/9fccb19ab18a/draw.lua",
       "icon_sha256": "4158e9688d27b539c486c72ffb2593510ce57ae8294baa5f44dd836443ac3393",
