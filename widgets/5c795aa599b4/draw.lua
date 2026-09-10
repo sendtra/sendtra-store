@@ -7,7 +7,7 @@ function draw(ox, oy, w, h)
     local t = i / 11
     local by = oy + math.floor(h * i / 12)
     local bh = math.ceil(h / 12) + 1
-    fill_rect(ox, by, w, bh, blend_color(0xB96B, 0x599D, t))
+    fill_rect(ox, by, w, bh, blend_color(0xFC70, 0x599D, t))
   end
   draw_text(ox + 20, oy + 16, "Text", 0xFFFF)
   draw_ring(ox + 167, oy + 26, 20, 15, 0.65, 0xFFFF, 0x2104, 0x0000)
