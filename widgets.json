@@ -55,7 +55,7 @@
     {
       "id": "fcd7c53ae77f",
       "name": "Color",
-      "version": 1,
+      "version": 2,
       "icon_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/fcd7c53ae77f/icon.bin",
       "script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/fcd7c53ae77f/draw.lua",
       "icon_sha256": "4f3a939e76634f942c3b6586504af1517db5d866c13a10b1cf3b3b5c134f5d6c",
