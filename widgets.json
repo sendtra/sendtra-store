@@ -2,16 +2,16 @@
   "widgets": [
     {
       "id": "977602844d63",
-      "name": "Test1",
-      "version": 1,
+      "name": "Test2",
+      "version": 2,
       "icon_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/977602844d63/icon.bin",
       "script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/977602844d63/draw.lua",
       "icon_sha256": "689c746fcf069fccf4f943aeaea225558904f30fc2c75aec942c7a074eb21310",
-      "script_sha256": "9b1e6362a091b63ba1f11aea52cdf7f964a3667017d1dc066fa0dcef018e47fd",
+      "script_sha256": "4f1be88b9084e04ac03f7456a51c1797f7fb5be1744c616eb47aca641a3d4479",
       "medium_script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/977602844d63/draw_medium.lua",
-      "medium_script_sha256": "bc9160f10de586cccb76ef3a194aee6f3892a0b038a9511f708301225beb3482",
+      "medium_script_sha256": "fb3ca7b689863f7233475c1f0f4771b275347b7e74570c4f2bc96fee3f0d2efa",
       "large_script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/977602844d63/draw_large.lua",
-      "large_script_sha256": "bc9160f10de586cccb76ef3a194aee6f3892a0b038a9511f708301225beb3482"
+      "large_script_sha256": "022bc23b508d9217f1331c650c4643a36c0d8c067029c37f43c75a586b35a3dd"
     }
   ]
 }
