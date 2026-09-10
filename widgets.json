@@ -42,7 +42,7 @@
     {
       "id": "2224a1c1740f",
       "name": "test",
-      "version": 1,
+      "version": 2,
       "icon_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/2224a1c1740f/icon.bin",
       "script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/2224a1c1740f/draw.lua",
       "icon_sha256": "5ffae03f14134d904139421f086cca078e2ed73cd07290527404a73783962f45",
