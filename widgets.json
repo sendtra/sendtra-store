@@ -116,19 +116,6 @@
       "medium_script_sha256": "959c995a7a4d1b32df5243e287837fc95d54251e4221427f7ed04ac42d47d6f9",
       "large_script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/d7704cc31cc7/draw_large.lua",
       "large_script_sha256": "959c995a7a4d1b32df5243e287837fc95d54251e4221427f7ed04ac42d47d6f9"
-    },
-    {
-      "id": "9329c4006369",
-      "name": "ZZDeleteTest",
-      "version": 1,
-      "icon_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/9329c4006369/icon.bin",
-      "script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/9329c4006369/draw.lua",
-      "icon_sha256": "27a734c0dd1ec100e426b95511203419eca029aa470fcd4ee4d472c84839ad87",
-      "script_sha256": "4b983136e50e6e0704ebd5b7c8253749cc92fe33952c76879e1013d54c02bfa0",
-      "medium_script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/9329c4006369/draw_medium.lua",
-      "medium_script_sha256": "38eac77334a149ef1ad33b30487e25547db2c7306adf44229161d3780153104f",
-      "large_script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/9329c4006369/draw_large.lua",
-      "large_script_sha256": "38eac77334a149ef1ad33b30487e25547db2c7306adf44229161d3780153104f"
     }
   ]
 }
