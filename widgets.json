@@ -64,6 +64,19 @@
       "medium_script_sha256": "5bc72ee00b8efd75652b61445ade8669e0a9e7c3b79c8f39b8720c2bb05fabc3",
       "large_script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/6d7d96f1c826/draw_large.lua",
       "large_script_sha256": "5bc72ee00b8efd75652b61445ade8669e0a9e7c3b79c8f39b8720c2bb05fabc3"
+    },
+    {
+      "id": "30d38073df47",
+      "name": "Golf",
+      "version": 1,
+      "icon_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/30d38073df47/icon.bin",
+      "script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/30d38073df47/draw.lua",
+      "icon_sha256": "39371216f66e79428d61f1150ce246ada695bfe9d35691637a83a72888684245",
+      "script_sha256": "a377d85c8f7b68dce59f25e2f6c493bf5c2fdf7e8102cf3ca0efd19f60b16eee",
+      "medium_script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/30d38073df47/draw_medium.lua",
+      "medium_script_sha256": "6be112ddaf9de1c1f4bd7e335d290c2fbf6efdd5354ab487f4721b6eaca3e288",
+      "large_script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/30d38073df47/draw_large.lua",
+      "large_script_sha256": "6be112ddaf9de1c1f4bd7e335d290c2fbf6efdd5354ab487f4721b6eaca3e288"
     }
   ]
 }
