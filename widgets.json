@@ -14,19 +14,6 @@
       "large_script_sha256": "959c995a7a4d1b32df5243e287837fc95d54251e4221427f7ed04ac42d47d6f9"
     },
     {
-      "id": "200e7199909b",
-      "name": "Siaa",
-      "version": 1,
-      "icon_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/200e7199909b/icon.bin",
-      "script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/200e7199909b/draw.lua",
-      "icon_sha256": "9865e206b6ee2ae04df3a2728e9443da23382561cefa706e7baa349a400a64dd",
-      "script_sha256": "c5f809f1bc03d09159628bc51e0b913b901dbbaad743b3251de68d1315896630",
-      "medium_script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/200e7199909b/draw_medium.lua",
-      "medium_script_sha256": "4bd5beb330341b006897e94de39f92e2e3787daf457e2ca83ade24928b42d5a5",
-      "large_script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/200e7199909b/draw_large.lua",
-      "large_script_sha256": "4bd5beb330341b006897e94de39f92e2e3787daf457e2ca83ade24928b42d5a5"
-    },
-    {
       "id": "e3ffa0358f5a",
       "name": "Clock",
       "version": 2,
@@ -64,6 +51,19 @@
       "medium_script_sha256": "eeb3dff2d7d605d2e83aadadd561d547be8b24164f38a3c035be5d654d392643",
       "large_script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/fcd7c53ae77f/draw_large.lua",
       "large_script_sha256": "eeb3dff2d7d605d2e83aadadd561d547be8b24164f38a3c035be5d654d392643"
+    },
+    {
+      "id": "200e7199909b",
+      "name": "Siaa",
+      "version": 2,
+      "icon_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/200e7199909b/icon.bin",
+      "script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/200e7199909b/draw.lua",
+      "icon_sha256": "f6354346118f443df961a60c82bb246865bac38ef86a1725c40a98fc8fdcf6b0",
+      "script_sha256": "0b000df0e9cfffe6305f04e6390d84b098619f65c5d0c0733cf3a4a65fe0c9d7",
+      "medium_script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/200e7199909b/draw_medium.lua",
+      "medium_script_sha256": "4bd5beb330341b006897e94de39f92e2e3787daf457e2ca83ade24928b42d5a5",
+      "large_script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/200e7199909b/draw_large.lua",
+      "large_script_sha256": "4bd5beb330341b006897e94de39f92e2e3787daf457e2ca83ade24928b42d5a5"
     }
   ]
 }
