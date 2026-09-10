@@ -1,3 +1,17 @@
 {
-  "widgets": []
+  "widgets": [
+    {
+      "id": "977602844d63",
+      "name": "Test1",
+      "version": 1,
+      "icon_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/977602844d63/icon.bin",
+      "script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/977602844d63/draw.lua",
+      "icon_sha256": "689c746fcf069fccf4f943aeaea225558904f30fc2c75aec942c7a074eb21310",
+      "script_sha256": "9b1e6362a091b63ba1f11aea52cdf7f964a3667017d1dc066fa0dcef018e47fd",
+      "medium_script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/977602844d63/draw_medium.lua",
+      "medium_script_sha256": "bc9160f10de586cccb76ef3a194aee6f3892a0b038a9511f708301225beb3482",
+      "large_script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/977602844d63/draw_large.lua",
+      "large_script_sha256": "bc9160f10de586cccb76ef3a194aee6f3892a0b038a9511f708301225beb3482"
+    }
+  ]
 }
