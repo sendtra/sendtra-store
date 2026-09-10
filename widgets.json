@@ -103,6 +103,19 @@
       "medium_script_sha256": "a3fef16ba6d3e943cbd190464df4451b59d954b2ce0834cac166536326325ced",
       "large_script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/93e34da91f0a/draw_large.lua",
       "large_script_sha256": "8438c607913089f42aec21069a43765a8f1d77bb965898b00a9b5d7f334703ee"
+    },
+    {
+      "id": "5c795aa599b4",
+      "name": "WW3",
+      "version": 1,
+      "icon_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/5c795aa599b4/icon.bin",
+      "script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/5c795aa599b4/draw.lua",
+      "icon_sha256": "2e328ef3d9a82416ef85b065db06db4b274848102a784a36eab814d529d2c591",
+      "script_sha256": "94a787eea6b0c3749a5752dc4cabff4f1b7a2aa5fbe27a02a825b7bddc9b1249",
+      "medium_script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/5c795aa599b4/draw_medium.lua",
+      "medium_script_sha256": "6f6733bf02df225d7e8ebc668ae97ea140b7c2e7dad4e91cefd8cebd08713c23",
+      "large_script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/5c795aa599b4/draw_large.lua",
+      "large_script_sha256": "6f6733bf02df225d7e8ebc668ae97ea140b7c2e7dad4e91cefd8cebd08713c23"
     }
   ]
 }
