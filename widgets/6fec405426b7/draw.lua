@@ -11,26 +11,35 @@ function draw(ox, oy, w, h)
       fill_rect(ox, oy + by, w, 1, blend_color(0xF538, 0xFE35, t))
     end
   end
-  local t1 = millis() / 1000.0
-  local ddx1 = math.floor((get_accel_x() * 20 + get_gyro_x() * 46 + math.sin(t1 * 1.3 + 2.513) * 1.6) * -0.4)
-  local ddy1 = math.floor((get_accel_y() * 20 + get_gyro_y() * 46 + math.sin(t1 * 0.9 + 2.513 + 1.571) * 1.6) * -0.4)
+  local ddx1, ddy1 = 0, 0
+  if get_accel_x and get_gyro_x and millis then
+    local t1 = millis() / 1000.0
+    ddx1 = math.floor((get_accel_x() * 20 + get_gyro_x() * 46 + math.sin(t1 * 1.3 + 2.513) * 1.6) * -0.4)
+    ddy1 = math.floor((get_accel_y() * 20 + get_gyro_y() * 46 + math.sin(t1 * 0.9 + 2.513 + 1.571) * 1.6) * -0.4)
+  end
   local WD = {"Sun","Mon","Tue","Wed","Thu","Fri","Sat"}
-  draw_text((ox + 76 + ddx1) + -9, (oy + 16 + ddy1) + -9, string.format("%s %d", WD[get_weekday() + 1], get_day()), blend_color(0x0000, 0x0000, 0.10))
-  draw_text((ox + 76 + ddx1) + -6, (oy + 16 + ddy1) + -6, string.format("%s %d", WD[get_weekday() + 1], get_day()), blend_color(0x0000, 0x0000, 0.22))
-  draw_text((ox + 76 + ddx1) + -4, (oy + 16 + ddy1) + -4, string.format("%s %d", WD[get_weekday() + 1], get_day()), blend_color(0x0000, 0x0000, 0.39))
+  draw_text((ox + 76 + ddx1) + -2, (oy + 16 + ddy1) + -9, string.format("%s %d", WD[get_weekday() + 1], get_day()), blend_color(0x0000, 0x0000, 0.10))
+  draw_text((ox + 76 + ddx1) + -1, (oy + 16 + ddy1) + -6, string.format("%s %d", WD[get_weekday() + 1], get_day()), blend_color(0x0000, 0x0000, 0.22))
+  draw_text((ox + 76 + ddx1) + -1, (oy + 16 + ddy1) + -4, string.format("%s %d", WD[get_weekday() + 1], get_day()), blend_color(0x0000, 0x0000, 0.39))
   draw_text((ox + 76 + ddx1), (oy + 16 + ddy1), string.format("%s %d", WD[get_weekday() + 1], get_day()), 0xEF5D)
-  local t2 = millis() / 1000.0
-  local ddx2 = math.floor((get_accel_x() * 20 + get_gyro_x() * 46 + math.sin(t2 * 1.3 + 5.529) * 1.6) * -0.2)
-  local ddy2 = math.floor((get_accel_y() * 20 + get_gyro_y() * 46 + math.sin(t2 * 0.9 + 5.529 + 1.571) * 1.6) * -0.2)
-  draw_ring((ox + 32 + ddx2) + -8, (oy + 28 + ddy2) + -8, 20, 15, 1, blend_color(0x0000, 0x0000, 0.09), blend_color(0x0000, 0x0000, 0.09), 0x0000)
-  draw_ring((ox + 32 + ddx2) + -5, (oy + 28 + ddy2) + -5, 20, 15, 1, blend_color(0x0000, 0x0000, 0.19), blend_color(0x0000, 0x0000, 0.19), 0x0000)
-  draw_ring((ox + 32 + ddx2) + -3, (oy + 28 + ddy2) + -3, 20, 15, 1, blend_color(0x0000, 0x0000, 0.34), blend_color(0x0000, 0x0000, 0.34), 0x0000)
+  local ddx2, ddy2 = 0, 0
+  if get_accel_x and get_gyro_x and millis then
+    local t2 = millis() / 1000.0
+    ddx2 = math.floor((get_accel_x() * 20 + get_gyro_x() * 46 + math.sin(t2 * 1.3 + 5.529) * 1.6) * -0.2)
+    ddy2 = math.floor((get_accel_y() * 20 + get_gyro_y() * 46 + math.sin(t2 * 0.9 + 5.529 + 1.571) * 1.6) * -0.2)
+  end
+  draw_ring((ox + 32 + ddx2) + -2, (oy + 28 + ddy2) + -8, 20, 15, 1, blend_color(0x0000, 0x0000, 0.09), blend_color(0x0000, 0x0000, 0.09), 0x0000)
+  draw_ring((ox + 32 + ddx2) + -1, (oy + 28 + ddy2) + -5, 20, 15, 1, blend_color(0x0000, 0x0000, 0.19), blend_color(0x0000, 0x0000, 0.19), 0x0000)
+  draw_ring((ox + 32 + ddx2) + -1, (oy + 28 + ddy2) + -3, 20, 15, 1, blend_color(0x0000, 0x0000, 0.34), blend_color(0x0000, 0x0000, 0.34), 0x0000)
   draw_ring((ox + 32 + ddx2), (oy + 28 + ddy2), 20, 15, 0.65, 0xFFFF, 0x2104, 0x0000)
-  local t3 = millis() / 1000.0
-  local ddx3 = math.floor((get_accel_x() * 20 + get_gyro_x() * 46 + math.sin(t3 * 1.3 + 2.513) * 1.6) * -0.2)
-  local ddy3 = math.floor((get_accel_y() * 20 + get_gyro_y() * 46 + math.sin(t3 * 0.9 + 2.513 + 1.571) * 1.6) * -0.2)
-  draw_ring((ox + 168 + ddx3) + -8, (oy + 28 + ddy3) + -8, 20, 15, 1, blend_color(0x0000, 0x0000, 0.09), blend_color(0x0000, 0x0000, 0.09), 0x0000)
-  draw_ring((ox + 168 + ddx3) + -5, (oy + 28 + ddy3) + -5, 20, 15, 1, blend_color(0x0000, 0x0000, 0.19), blend_color(0x0000, 0x0000, 0.19), 0x0000)
-  draw_ring((ox + 168 + ddx3) + -3, (oy + 28 + ddy3) + -3, 20, 15, 1, blend_color(0x0000, 0x0000, 0.34), blend_color(0x0000, 0x0000, 0.34), 0x0000)
+  local ddx3, ddy3 = 0, 0
+  if get_accel_x and get_gyro_x and millis then
+    local t3 = millis() / 1000.0
+    ddx3 = math.floor((get_accel_x() * 20 + get_gyro_x() * 46 + math.sin(t3 * 1.3 + 2.513) * 1.6) * -1)
+    ddy3 = math.floor((get_accel_y() * 20 + get_gyro_y() * 46 + math.sin(t3 * 0.9 + 2.513 + 1.571) * 1.6) * -1)
+  end
+  draw_ring((ox + 168 + ddx3) + -2, (oy + 28 + ddy3) + -11, 20, 15, 1, blend_color(0x0000, 0x0000, 0.14), blend_color(0x0000, 0x0000, 0.14), 0x0000)
+  draw_ring((ox + 168 + ddx3) + -2, (oy + 28 + ddy3) + -8, 20, 15, 1, blend_color(0x0000, 0x0000, 0.30), blend_color(0x0000, 0x0000, 0.30), 0x0000)
+  draw_ring((ox + 168 + ddx3) + -1, (oy + 28 + ddy3) + -6, 20, 15, 1, blend_color(0x0000, 0x0000, 0.52), blend_color(0x0000, 0x0000, 0.52), 0x0000)
   draw_ring((ox + 168 + ddx3), (oy + 28 + ddy3), 20, 15, 0.65, 0xFFFF, 0x2104, 0x0000)
 end
