@@ -90,6 +90,19 @@
       "medium_script_sha256": "8f47b1716dcba8ff9612d4f0e704eb4ccc330b58c5daf0e1c98cbf7f795ef0c4",
       "large_script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/45f4a700707a/draw_large.lua",
       "large_script_sha256": "8f47b1716dcba8ff9612d4f0e704eb4ccc330b58c5daf0e1c98cbf7f795ef0c4"
+    },
+    {
+      "id": "0e0a149e0d6a",
+      "name": "NewNew3d",
+      "version": 1,
+      "icon_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/0e0a149e0d6a/icon.bin",
+      "script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/0e0a149e0d6a/draw.lua",
+      "icon_sha256": "eca34f8db26eb76c378e2df827268d18e8bb60a60bfa910a23c3870e9d3701d7",
+      "script_sha256": "052bda4e767032ed8ec7a6815d9185bb26212025f886882e857a3ddba714c73f",
+      "medium_script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/0e0a149e0d6a/draw_medium.lua",
+      "medium_script_sha256": "a7867fc86270b55ccdd93b5cd20d79f74fd96b15f66b690dcaa95993bcde4a1e",
+      "large_script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/0e0a149e0d6a/draw_large.lua",
+      "large_script_sha256": "a7867fc86270b55ccdd93b5cd20d79f74fd96b15f66b690dcaa95993bcde4a1e"
     }
   ]
 }
