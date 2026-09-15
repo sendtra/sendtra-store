@@ -2,35 +2,46 @@
 -- re-export from the designer instead so the two stay in sync.
 -- Widget: netTest3d
 
+local motion_x, motion_y, motion_time = 0, 0, nil
+local function sensor(fn)
+  if type(fn) ~= "function" then return 0 end
+  local v = fn(); if type(v) ~= "number" or v ~= v then return 0 end
+  return math.max(-1, math.min(1, v))
+end
 function draw(ox, oy, w, h)
+  local now = type(millis) == "function" and millis() or ((motion_time or 0) + 16)
+  local dt = motion_time and math.max(0, math.min(100, now - motion_time)) or 16
+  motion_time = now
+  local response = 1 - math.exp(-dt / 90)
+  local tx = math.max(-6, math.min(6, sensor(get_accel_x) * 12 + sensor(get_gyro_y) * 0.8))
+  local ty = math.max(-6, math.min(6, sensor(get_accel_y) * 12 - sensor(get_gyro_x) * 0.8))
+  motion_x = motion_x + (tx - motion_x) * response
+  motion_y = motion_y + (ty - motion_y) * response
+  local bgx, bgy = -motion_x * 0.4, -motion_y * 0.4
+  if type(fill_gradient) == "function" then
+    fill_gradient(ox, oy, w, h, 0xEF5D, 0xEF5D, 0.000000, 1.000000, bgx, bgy)
+  else
   do
     local halfH = h / 2
     for by = 0, h - 1 do
-      local t = 0.5 + (by + 0.5 - halfH) / h
+      local t = 0.5 + (by + 0.5 - halfH - bgy) / h
       if t < 0 then t = 0 elseif t > 1 then t = 1 end
       fill_rect(ox, oy + by, w, 1, blend_color(0xEF5D, 0xEF5D, t))
     end
   end
-  local ddx1, ddy1 = 0, 0
-  if get_accel_x and get_gyro_x and millis then
-    local t1 = millis() / 1000.0
-    ddx1 = math.floor((get_accel_x() * 20 + get_gyro_x() * 46 + math.sin(t1 * 1.3 + 4.272) * 1.6) * 0.1)
-    ddy1 = math.floor((get_accel_y() * 20 + get_gyro_y() * 46 + math.sin(t1 * 0.9 + 4.272 + 1.571) * 1.6) * 0.1)
   end
-  draw_text((ox + 80 + ddx1) + 2, (oy + 16 + ddy1) + 7, "Text", blend_color(0x0000, 0x0000, 0.09))
-  draw_text((ox + 80 + ddx1) + 1, (oy + 16 + ddy1) + 4, "Text", blend_color(0x0000, 0x0000, 0.17))
-  draw_text((ox + 80 + ddx1) + 0, (oy + 16 + ddy1) + 2, "Text", blend_color(0x0000, 0x0000, 0.32))
-  draw_text((ox + 80 + ddx1), (oy + 16 + ddy1), "Text", 0xFFFF)
-  local ddx2, ddy2 = 0, 0
-  if get_accel_x and get_gyro_x and millis then
-    local t2 = millis() / 1000.0
-    ddx2 = math.floor((get_accel_x() * 20 + get_gyro_x() * 46 + math.sin(t2 * 1.3 + 0.251) * 1.6) * 0.3)
-    ddy2 = math.floor((get_accel_y() * 20 + get_gyro_y() * 46 + math.sin(t2 * 0.9 + 0.251 + 1.571) * 1.6) * 0.3)
-  end
+  draw_text(ox + 80, oy + 16, "Text", 0xFFFF)
   local WD = {"Sun","Mon","Tue","Wed","Thu","Fri","Sat"}
-  draw_text((ox + 128 + ddx2) + 2, (oy + 16 + ddy2) + 8, string.format("%s %d", WD[get_weekday() + 1], get_day()), blend_color(0x0000, 0x0000, 0.10))
-  draw_text((ox + 128 + ddx2) + 1, (oy + 16 + ddy2) + 5, string.format("%s %d", WD[get_weekday() + 1], get_day()), blend_color(0x0000, 0x0000, 0.20))
-  draw_text((ox + 128 + ddx2) + 1, (oy + 16 + ddy2) + 3, string.format("%s %d", WD[get_weekday() + 1], get_day()), blend_color(0x0000, 0x0000, 0.37))
-  draw_text((ox + 128 + ddx2), (oy + 16 + ddy2), string.format("%s %d", WD[get_weekday() + 1], get_day()), 0x8410)
-  draw_ring(ox + 26, oy + 26, 20, 15, 0.65, 0x971F, 0xD6BA, 0xFFFF)
+  draw_text(ox + 128, oy + 16, string.format("%s %d", WD[get_weekday() + 1], get_day()), 0x8410)
+  local ddx1 = math.floor(motion_x * -0.3333333333333333 + 0.5)
+  local ddy1 = math.floor(motion_y * -0.3333333333333333 + 0.5)
+  draw_ring((ox + 32 + ddx1) + -2, (oy + 28 + ddy1) + -7, 20, 15, 1, blend_color(0x0000, 0xFFFF, 0.02), blend_color(0x0000, 0xFFFF, 0.02), 0xFFFF)
+  draw_ring((ox + 32 + ddx1) + -1, (oy + 28 + ddy1) + -6, 20, 15, 1, blend_color(0x0000, 0xFFFF, 0.03), blend_color(0x0000, 0xFFFF, 0.03), 0xFFFF)
+  draw_ring((ox + 32 + ddx1) + -1, (oy + 28 + ddy1) + -5, 20, 15, 1, blend_color(0x0000, 0xFFFF, 0.07), blend_color(0x0000, 0xFFFF, 0.07), 0xFFFF)
+  draw_ring((ox + 32 + ddx1) + -1, (oy + 28 + ddy1) + -4, 20, 15, 1, blend_color(0x0000, 0xFFFF, 0.11), blend_color(0x0000, 0xFFFF, 0.11), 0xFFFF)
+  draw_ring((ox + 32 + ddx1) + -1, (oy + 28 + ddy1) + -4, 20, 15, 1, blend_color(0x0000, 0xFFFF, 0.16), blend_color(0x0000, 0xFFFF, 0.16), 0xFFFF)
+  draw_ring((ox + 32 + ddx1) + -1, (oy + 28 + ddy1) + -3, 20, 15, 1, blend_color(0x0000, 0xFFFF, 0.21), blend_color(0x0000, 0xFFFF, 0.21), 0xFFFF)
+  draw_ring((ox + 32 + ddx1) + 0, (oy + 28 + ddy1) + -2, 20, 15, 1, blend_color(0x0000, 0xFFFF, 0.24), blend_color(0x0000, 0xFFFF, 0.24), 0xFFFF)
+  draw_ring((ox + 32 + ddx1) + 0, (oy + 28 + ddy1) + -1, 20, 15, 1, blend_color(0x0000, 0xFFFF, 0.25), blend_color(0x0000, 0xFFFF, 0.25), 0xFFFF)
+  draw_ring((ox + 32 + ddx1), (oy + 28 + ddy1), 20, 15, 0.65, 0x971F, 0xD6BA, 0xFFFF)
 end
