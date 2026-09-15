@@ -125,6 +125,17 @@
       "script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/d072dea22398/draw.lua",
       "icon_sha256": "ef8250fb0306aaabc58ba77cbcfb02d3f1b59a61b99e3f045ca04719e550bfe9",
       "script_sha256": "647cc73da60d3bd38814798f83ce4004845d66be4f8475d3f18dd1577f9414df"
+    },
+    {
+      "id": "de611c27443b",
+      "name": "mid card test",
+      "version": 1,
+      "icon_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/de611c27443b/icon.bin",
+      "script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/de611c27443b/draw.lua",
+      "icon_sha256": "2afe0217d779471b893a0d3675017adfee51694c62d68ca2471af2d6edae2676",
+      "script_sha256": "b1d8ba2b776c36a5245d572216cb3109a53934a0fb1ebd3b43e9fda892b2cd47",
+      "medium_script_url": "https://raw.githubusercontent.com/sendtra/sendtra-store/main/widgets/de611c27443b/draw_medium.lua",
+      "medium_script_sha256": "e5c9476fa7c7501821235001d7273ace540a047760981059bff60451f5cccba8"
     }
   ]
 }
